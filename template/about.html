@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div>
+		{% for p in post %}
+		<div>
+			<p>
+        	<b>Roll Number: {{p.roll_no}}</b>
+	        </p>
+	        <p>
+	        	Name: {{p.name}}
+	        </p>
+	        <p>
+	        	Phone: {{p.phone_num}}
+	        </p>
+	        <p>
+	        	Email: {{p.email}}
+	        </p>
+	        <p>
+	        	College: {{p.college}}
+	        </p>
+	        <p>
+	        	Branch: {{p.branch}}
+	        </p>
+	        <p>
+	        	CGPA: {{p.cgpa}}
+	        </p>
+		</div>
+        
+
+    	{% endfor %}
+		
+	</div>
+
+</body>
+</html>
